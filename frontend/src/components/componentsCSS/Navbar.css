@@ -1,0 +1,133 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0.1rem 1rem;
+  z-index: 1000;
+  margin-bottom: 20px;
+  background-image: url(../../assets/Nav_background1_cropped.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo and Title Group */
+.logo-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem; /* More natural spacing */
+}
+
+/* Logo */
+.navbar-logo {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Title */
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: #1a1a1a;
+  color: #81c1d9f9; /* Higher contrast */
+  text-decoration:solid;
+  text-shadow:
+    -1px -0.5px 0 #2f697ef9,
+     1px -0.5px 0 #2f697ef9,
+    -1px  0.5px 0 #2f697ef9,
+     1px  0.5px 0 #2f697ef9;
+  white-space: nowrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Links */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #59cef8ec; /* Light text on dark background */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+nav ul li a:hover:not(.active) {
+  background: linear-gradient(to right, #a4ddf4, #ffe0ec);
+  color: #1a1a1a;
+}
+
+/* Active Link */
+.active {
+  background: linear-gradient(to right, #00aaff, #00eaffd8);
+  color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+/* Mobile Menu Button */
+.menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu span {
+  height: 4px;
+  background-color: #1a1a1a;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #81c1d9f9;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-title-group {
+    margin-right: 0;
+  }
+
+  .menu {
+    display: flex;
+  }
+}
