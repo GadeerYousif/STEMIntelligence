@@ -1,0 +1,25 @@
+.intro-section {
+  padding: 4rem 2rem;
+  background-color: #f9fbfd; /* Light background for contrast */
+  display: flex;
+  justify-content: center;
+}
+
+.intro-container {
+  max-width: 800px;
+  text-align: center;
+  color: #002040; /* Dark navy for trust */
+}
+
+.intro-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.intro-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
