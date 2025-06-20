@@ -1,0 +1,415 @@
+/* Services Page Styles - Matching HomePage Design */
+.services-page {
+    min-height: 100vh;
+    background-color: #f9fbfd;
+    font-family: "Open Sans", sans-serif;
+    color: #002040;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header Section - Similar to HomeParaIntro */
+.services-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 4rem 2rem;
+    background-color: #f9fbfd;
+}
+
+.services-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #002040;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.services-header p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Service Sections - Similar to ServicesSnapshot */
+.service-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-section:hover {
+    transform: translateY(-5px);
+}
+
+.service-section.reversed {
+    flex-direction: row-reverse;
+}
+
+.service-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f0faff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #002040;
+    font-size: 1.5rem;
+    border: 2px solid #e0f2fe;
+}
+
+.service-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #002040;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.service-content h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features li {
+    padding: 0.3rem 0;
+    color: #333;
+    position: relative;
+    padding-left: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #002040;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.service-image {
+    flex: 1;
+    min-height: 250px;
+    background-color: #f0faff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #002040;
+    font-size: 3rem;
+    border-left: 1px solid #e0f2fe;
+}
+
+/* Pricing Section - Similar to ServicesSnapshot */
+.pricing-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    padding: 3rem 2rem;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 2rem;
+    color: #002040;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.pricing-section p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 3rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pricing-card {
+    background-color: #f0faff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    padding: 2rem;
+    width: 280px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    border-color: #002040;
+}
+
+.pricing-card.featured {
+    background-color: #002040;
+    color: white;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured h3,
+.pricing-card.featured .price,
+.pricing-card.featured .price-label {
+    color: white;
+}
+
+.pricing-card h3 {
+    font-size: 1.25rem;
+    color: #002040;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #002040;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.price-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.pricing-features li {
+    padding: 0.5rem 0;
+    color: #333;
+    font-size: 0.95rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pricing-card.featured .pricing-features li {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #002040;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    padding: 3rem 2rem;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.testimonial-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+.testimonial-author {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0.9;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    margin: 4rem 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    color: #002040;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Buttons - Matching HomePage CTA button */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn-primary {
+    background-color: #ffd700;
+    color: #002040;
+}
+
+.btn-primary:hover {
+    background-color: #ffc200;
+}
+
+.btn-secondary {
+    background-color: #f0faff;
+    color: #002040;
+    border: 2px solid #002040;
+}
+
+.btn-secondary:hover {
+    background-color: #e0f2fe;
+}
+
+/* Sticky CTA */
+.sticky-cta {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.sticky-cta .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        padding: 0 1rem;
+    }
+    
+    .services-header h1 {
+        font-size: 2rem;
+    }
+    
+    .service-section {
+        flex-direction: column !important;
+    }
+    
+    .service-section.reversed {
+        flex-direction: column !important;
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    .service-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .service-image {
+        min-height: 200px;
+        border-left: none;
+        border-top: 1px solid #e0f2fe;
+    }
+    
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        width: 90%;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .sticky-cta {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .sticky-cta .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .service-content {
+        padding: 1rem;
+    }
+    
+    .pricing-section,
+    .testimonials-section,
+    .cta-section {
+        padding: 2rem 1rem;
+    }
+}

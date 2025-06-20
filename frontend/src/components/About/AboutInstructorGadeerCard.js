@@ -1,8 +1,6 @@
-import React from 'react';
-import './componentsCSS/AboutInstructorGadeerCard.css';
-import instructorPhoto from '../assets/logo192.png'; // Adjust path as needed
-
-
+import React from "react";
+import "./styles/AboutInstructorGadeerCard.css";
+import instructorPhoto from "../../assets/logo512.png";
 export default function AboutInstructorGadeerCard() {
   return (
     <div className="lead-instructor-card">
@@ -26,4 +24,4 @@ My teaching philosophy centers on interactive, student-centered learning—tailo
 Let’s unlock your full potential together!      </p>
     </div>
   );
-}
+} 

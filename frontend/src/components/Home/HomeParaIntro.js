@@ -1,7 +1,7 @@
 import React from "react";
-import "../components/componentsCSS/HomeParaIntro.css";
+import "./styles/HomeParaIntro.css";
 
-export default function HomeParaIntro  (){
+export default function HomeParaIntro() {
   return (
     <section className="intro-section">
       <div className="intro-container">
@@ -15,6 +15,6 @@ export default function HomeParaIntro  (){
       </div>
     </section>
   );
-};
+}
 
 

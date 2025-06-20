@@ -1,23 +1,14 @@
 import React from "react";
-import HeroBanner from "../HeroBanner";
-import HomeParaIntro from "../HomeParaIntro";
-import ServicesSnapshot from "../ServicesSnapshot";
+import HeroBanner from "../Home/HeroBanner";
+import HomeParaIntro from "../Home/HomeParaIntro";
+import ServicesSnapshot from "../Home/ServicesSnapshot";
 
 export default function HomePage() {
-    console.log("Rendering HomePage");
-    return(
-    <div>
-    <HeroBanner />
-    <HomeParaIntro/>
-    <ServicesSnapshot/>
-
-   
-    
-    
-    
-    
-    
-    
-</div>
-    )
+    return (
+        <div>
+            <HeroBanner />
+            <HomeParaIntro />
+            <ServicesSnapshot />
+        </div>
+    );
 }

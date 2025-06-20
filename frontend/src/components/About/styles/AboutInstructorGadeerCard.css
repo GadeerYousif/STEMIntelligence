@@ -1,0 +1,89 @@
+/* AboutInstructorGadeerCard.css */
+.AboutMePage{
+  
+  background: #F8F9FC;
+  background-color: #F8F9FC;
+  
+  }
+  
+  .lead-instructor-card {
+    background-color: #F8F9FC;
+    border-radius: 12px;
+    box-shadow: 0S 4px 6px rgSba(0, 0, 0, 0.1);
+    padding: 24px;
+  /*   max-width: 400px;
+   */  margin: 24px auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .lead-instructor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .instructor-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 16px;
+    border: 4px solid #f0f0f0;
+  }
+  
+  .lead-instructor-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 12px;
+  }
+  
+  .lead-instructor-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 8px 0;
+  }
+  
+  .lead-instructor-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+  }
+  
+  .lead-instructor-card li {
+    font-size: 0.95rem;
+    color: #444;
+    margin: 8px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .lead-instructor-card li::before {
+    content: '>';
+    left: 0;
+    color: #007bff;
+    font-size: 1.2rem;
+    padding-right: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .lead-instructor-card {
+      max-width: 90%;
+      padding: 16px;
+    }
+  
+    .instructor-photo {
+      width: 160px;
+      height: 160px;
+    }
+  
+    .lead-instructor-card h2 {
+      font-size: 1.25rem;
+    }
+  
+    .lead-instructor-card p,
+    .lead-instructor-card li {
+      font-size: 0.9rem;
+    }
+  }

@@ -14,9 +14,8 @@ nav {
   top: 0;
   width: 100%;
   padding: 0.1rem 1rem;
-  z-index: 1000;
-  margin-bottom: 4rem;
-  background-image: url(../../assets/Nav_background1_cropped.jpg);
+  margin-bottom: 0;
+  background-image: url(../../../assets/Nav_background1_cropped.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -102,21 +101,28 @@ nav ul li a:hover:not(.active) {
 
 /* Mobile Styles */
 @media (max-width: 640px) {
+  nav {
+    position: relative;
+  }
+  
   nav ul {
     display: none;
     flex-direction: column;
     background: #81c1d9f9;
     position: absolute;
-    top: 4.45rem;
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 1rem 2rem;
     gap: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
   }
-.title {
-  font-size: 1.4rem;
-}
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
   nav ul.open {
     display: flex;
   }
@@ -135,13 +141,13 @@ nav ul li a:hover:not(.active) {
   }
   
   nav ul li a {
-  text-decoration: none;
-  color: #0e3865; /* Light text on dark background */
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-family: 'Segoe UI', sans-serif;
-  font-weight: 700;
-  font-size: large;
-}
+    text-decoration: none;
+    color: #0e3865;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    font-size: large;
+  }
 }

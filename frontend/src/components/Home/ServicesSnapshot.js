@@ -1,15 +1,15 @@
 import React from "react";
-import "../components/componentsCSS/ServicesSnapshot.css";
+import "./styles/ServicesSnapshot.css";
 /* import mathIcon from "../assets/math-icon.png";
 import scienceIcon from "../assets/science-icon.png";
 import codingIcon from "../assets/coding-icon.png"; */
 
-export default function ServicesSnapshot  ()  {
+export default function ServicesSnapshot() {
   const services = [
     {
       title: "Math Tutoring (K–12)",
       description:
-        "From basic arithmetic to advanced calculus, our math sessions align with your child’s grade and curriculum.",
+        "From basic arithmetic to advanced calculus, our math sessions align with your child's grade and curriculum.",
      /*  icon: mathIcon, */
     },
     {
@@ -40,5 +40,5 @@ export default function ServicesSnapshot  ()  {
       </div>
     </section>
   );
-};
+}
 

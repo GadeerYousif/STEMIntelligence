@@ -1,6 +1,6 @@
 import React from "react";
-import "./componentsCSS/HeroBanner.css";
-import heroImage from "../assets/heroBanner1.png"; // Make sure you have a relevant image here
+import "./styles/HeroBanner.css";
+import heroImage from "../../assets/heroBanner1.png"; // Make sure you have a relevant image here
 
 export default function HeroBanner() {
   return (

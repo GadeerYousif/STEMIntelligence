@@ -1,15 +1,15 @@
 import React from "react";
-import AboutInstructorGadeerCard from "../AboutInstructorGadeerCard.js";
-import './PageCSS/AboutMePage.css'
-
+import AboutInstructorGadeerCard from "../About/AboutInstructorGadeerCard";
+import "../About/styles/AboutMePage.css";
 
 export default function AboutMePage() {
-    console.log("Rendering About");
     return ( 
-        <div>
-        <h1 className="AMTitle"> This is the About me Page 1 </h1>
-        <AboutInstructorGadeerCard />
-            
-</div>
+        <div className="about-page">
+            <div className="about-header">
+                <h1 className="AMTitle">About STEM Intelligence</h1>
+                <p>Learn more about our mission and your dedicated instructor</p>
+            </div>
+            <AboutInstructorGadeerCard />
+        </div>
     );
 }

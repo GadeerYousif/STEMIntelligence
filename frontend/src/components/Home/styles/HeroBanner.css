@@ -57,10 +57,14 @@
 @media (max-width: 700px) {
   .hero h1 {
     font-size: 1.8rem;
+    background-repeat:initial;
+
   }
 
   .hero p {
     font-size: 1rem;
+    background-repeat:initial;
+
   }
 
   .cta-button {
