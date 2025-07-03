@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/HeroBanner.css";
 import heroImage from "../../assets/heroBanner1.png"; // Make sure you have a relevant image here
+import { Link } from "react-router-dom";
 
 export default function HeroBanner() {
   return (
@@ -12,7 +13,9 @@ export default function HeroBanner() {
         <div className="hero-content">
           <h1>Master Math, Science & Coding</h1>
           <p>Personalized online lessons via Zoom for Grades 1–12</p>
-          <button className="cta-button">Book a Free Session</button>
+          <Link to="/signup" className="cta-button">
+          Book a Free Session
+        </Link>
         </div>
       </div>
     </section>

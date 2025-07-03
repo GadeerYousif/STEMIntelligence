@@ -1,6 +1,7 @@
 .services-section {
   background-color: #ffffff;
   padding: 4rem 2rem;
+  padding-bottom: 6rem;
   text-align: center;
   color: #002040;
 }
@@ -15,15 +16,15 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .service-card {
   background-color: #f0faff;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+  box-shadow: 0 5px 8px rgba(0, 32, 64, 0.1);
   padding: 2rem;
-  width: 280px;
+  width: 22rem;
   transition: transform 0.3s ease;
 }
 
@@ -37,13 +38,13 @@
 }
 
 .service-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.65rem;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .service-card p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Open Sans", sans-serif;
   color: #333;
 }
