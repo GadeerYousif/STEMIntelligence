@@ -14,11 +14,8 @@ export default function BenefitsSection() {
   {
     icon: "🕒",
     text: "Flexible scheduling via Zoom",
-  },
-  {
-    icon: "📈",
-    text: "Progress tracking & regular feedback for parents",
-  },
+  }
+ 
 ];
 
   return (
