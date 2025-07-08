@@ -1,14 +1,23 @@
 import React from "react";
-import "../Services/styles/ServicesPage.css";
-import ServiceCard from "../Services/ServiceCard";
-import PricingCard from "../Services/PricingCard";
-import CTASection from "../Services/CTASection";
-import { servicesData, pricingData, ctaData } from "../../data/servicesData";
+import ServicesHeader from "../Services/ServicesHeader";
+import ServicesList from "../Services/ServicesList";
+import PricingSection from "../Services/PricingSection";
+import ServicesCTA from "../Services/ServicesCTA";
 
 export default function ServicesPage() {
+    const handleBookSession = () => {
+        // Navigate to signup page
+        window.location.href = '/signup';
+    };
+
     return (
-        <div>
-            <h1>Services Page</h1>
+        <div className="services-page">
+            <div className="services-container">
+                <ServicesHeader />
+                <ServicesList />
+                <PricingSection onBookSession={handleBookSession} />
+                <ServicesCTA onBookSession={handleBookSession} />
+            </div>
         </div>
     );
 }

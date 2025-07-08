@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/CTASection.css";
 
 export default function CTASection({ title, description, buttonText, onClick, isSticky = false }) {
     const className = isSticky ? "sticky-cta" : "cta-section";

@@ -1,0 +1,117 @@
+/* Pricing Card Styles */
+.pricing-card {
+    background-color: #f0faff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    padding: 2rem;
+    width: 280px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    border-color: #002040;
+}
+
+.pricing-card.featured {
+    background-color: #002040;
+    color: white;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured h3,
+.pricing-card.featured .price,
+.pricing-card.featured .price-label {
+    color: white;
+}
+
+.pricing-card h3 {
+    font-size: 1.25rem;
+    color: #002040;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #002040;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.price-label {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.pricing-features li {
+    padding: 0.5rem 0;
+    color: #333;
+    font-size: 0.95rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pricing-card.featured .pricing-features li {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn-primary {
+    background-color: #ffd700;
+    color: #002040;
+}
+
+.btn-primary:hover {
+    background-color: #ffc200;
+}
+
+.btn-secondary {
+    background-color: #0a3950;
+    color: #002040;
+    border: 2px solid #002040;
+}
+
+.btn-secondary:hover {
+    background-color: #e0f2fe;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .pricing-card {
+        width: 90%;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-card {
+        width: 95%;
+        padding: 1.5rem;
+    }
+} 

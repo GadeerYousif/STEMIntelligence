@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./styles/SignUpForm.css";
 
-export default function Form() {
+export default function SignUpForm() {
   const [formData, setFormData] = useState({
     requesterName: '',
     email: '',
@@ -119,18 +120,18 @@ if (response.ok) {
 
   // Determine status class based on status content
   const getStatusClass = () => {
-    if (status.includes('✅')) return 'success';
-    if (status.includes('❌')) return 'error';
-    if (status.includes('Submitting')) return 'submitting';
+    if (status.includes('✅')) return 'signup-form-success';
+    if (status.includes('❌')) return 'signup-form-error';
+    if (status.includes('Submitting')) return 'signup-form-submitting';
     return '';
   };
 
   return (
-    <div className="signup-container">
-      <form onSubmit={handleSubmit} className="signup-form">
-        <h2>📬 Contact Me</h2>
+    <div className="signup-form-bg">
+      <form onSubmit={handleSubmit} className="signup-form-container">
+        <h2 className="signup-form-title">📬 Contact Me</h2>
 
-        <label>
+        <label className="signup-form-label">
           Your Name: *
           <input 
             type="text" 
@@ -139,12 +140,12 @@ if (response.ok) {
             onChange={handleChange} 
             required 
             placeholder="Enter your full name"
-            className={errors.requesterName ? 'error' : ''}
+            className={`signup-form-input${errors.requesterName ? ' signup-form-input-error' : ''}`}
           />
-          {errors.requesterName && <span className="error-message">{errors.requesterName}</span>}
+          {errors.requesterName && <span className="signup-form-error-message">{errors.requesterName}</span>}
         </label>
 
-        <label>
+        <label className="signup-form-label">
           Email: *
           <input 
             type="email" 
@@ -154,12 +155,12 @@ if (response.ok) {
             onBlur={handleBlur}
             required 
             placeholder="Enter your email address"
-            className={errors.email ? 'error' : ''}
+            className={`signup-form-input${errors.email ? ' signup-form-input-error' : ''}`}
           />
-          {errors.email && <span className="error-message">{errors.email}</span>}
+          {errors.email && <span className="signup-form-error-message">{errors.email}</span>}
         </label>
 
-        <label>
+        <label className="signup-form-label">
           Phone Number:
           <input 
             type="tel" 
@@ -168,12 +169,12 @@ if (response.ok) {
             onChange={handleChange} 
             onBlur={handleBlur}
             placeholder="Enter your phone number (optional) - 10 digits or XXX-XXX-XXXX"
-            className={errors.phoneNum ? 'error' : ''}
+            className={`signup-form-input${errors.phoneNum ? ' signup-form-input-error' : ''}`}
           />
-          {errors.phoneNum && <span className="error-message">{errors.phoneNum}</span>}
+          {errors.phoneNum && <span className="signup-form-error-message">{errors.phoneNum}</span>}
         </label>
 
-        <label>
+        <label className="signup-form-label">
           Student's Name: *
           <input 
             type="text" 
@@ -182,18 +183,18 @@ if (response.ok) {
             onChange={handleChange} 
             required
             placeholder="Enter student's name"
-            className={errors.studentName ? 'error' : ''}
+            className={`signup-form-input${errors.studentName ? ' signup-form-input-error' : ''}`}
           />
-          {errors.studentName && <span className="error-message">{errors.studentName}</span>}
+          {errors.studentName && <span className="signup-form-error-message">{errors.studentName}</span>}
         </label>
 
-        <label>
+        <label className="signup-form-label">
           Grade: *
           <select 
             name="grade" 
             value={formData.grade} 
             onChange={handleChange}
-            className={`grade-select ${errors.grade ? 'error' : ''}`}
+            className={`signup-form-select signup-form-grade-select${errors.grade ? ' signup-form-input-error' : ''}`}
             required
           >
             <option value="">Select grade level</option>
@@ -211,10 +212,10 @@ if (response.ok) {
             <option value="12">Grade 12</option>
             <option value="university">University</option>
           </select>
-          {errors.grade && <span className="error-message">{errors.grade}</span>}
+          {errors.grade && <span className="signup-form-error-message">{errors.grade}</span>}
         </label>
 
-        <label>
+        <label className="signup-form-label">
           Subject: *
           <input 
             type="text" 
@@ -223,25 +224,26 @@ if (response.ok) {
             onChange={handleChange} 
             required
             placeholder="Enter subject (e.g., Math, Science, Coding)"
-            className={errors.subject ? 'error' : ''}
+            className={`signup-form-input${errors.subject ? ' signup-form-input-error' : ''}`}
           />
-          {errors.subject && <span className="error-message">{errors.subject}</span>}
+          {errors.subject && <span className="signup-form-error-message">{errors.subject}</span>}
         </label>
 
-        <label>
+        <label className="signup-form-label">
           Additional Information:
           <textarea 
             name="additionalInfo" 
             value={formData.additionalInfo} 
             onChange={handleChange} 
             placeholder="Tell us about your tutoring needs, specific topics, or any other relevant information..."
+            className="signup-form-textarea"
           />
         </label>
 
-        <button type="submit">Submit Request</button>
+        <button type="submit" className="signup-form-submit-btn">Submit Request</button>
 
-        {status && <p className={`status ${getStatusClass()}`}>{status}</p>}
+        {status && <p className={`signup-form-status ${getStatusClass()}`}>{status}</p>}
       </form>
     </div>
   );
-}
+} 

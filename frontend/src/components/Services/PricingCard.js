@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/PricingCard.css";
 
 export default function PricingCard({ title, price, priceLabel, features, buttonText, buttonType = "secondary", onClick, isFeatured = false }) {
     return (

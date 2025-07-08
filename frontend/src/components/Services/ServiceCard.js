@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/ServiceCard.css";
 
 export default function ServiceCard({ icon, title, subtitle, description, features, imageIcon, isReversed = false }) {
     return (

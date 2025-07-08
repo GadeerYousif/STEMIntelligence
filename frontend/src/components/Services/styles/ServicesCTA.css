@@ -1,0 +1,105 @@
+/* Services CTA Section Styles */
+.cta-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    margin: 4rem 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    color: #002040;
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn-primary {
+    background-color: #ffd700;
+    color: #002040;
+}
+
+.btn-primary:hover {
+    background-color: #ffc200;
+}
+
+/* Sticky CTA */
+.sticky-cta {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.sticky-cta .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 2rem 1rem;
+        margin: 3rem 0;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-section p {
+        font-size: 1rem;
+    }
+    
+    .sticky-cta {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .sticky-cta .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-section {
+        padding: 2rem 1rem;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+} 

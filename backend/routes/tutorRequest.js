@@ -18,6 +18,7 @@ router.post("/create", async (req, res) => {
         phoneNum: req.body.phoneNum || '',
         grade: req.body.grade || '',
         studentName: req.body.studentName || '',
+        subject: req.body.subject || '',
         additionalInfo: req.body.additionalInfo || '',
         createdAt: new Date(),
         status: 'pending'
@@ -30,6 +31,7 @@ router.post("/create", async (req, res) => {
       email: req.body.email,
       phone: req.body.phoneNum || 'Not provided',
       grade: req.body.grade || 'Not specified',
+      subject: req.body.subject || 'Not specified',
       message: req.body.additionalInfo || 'No additional notes',
       request_id: requestId,
       request_date: new Date().toLocaleString(),

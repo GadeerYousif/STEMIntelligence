@@ -1,0 +1,132 @@
+/* Services List Styles */
+.services-list {
+    margin-bottom: 4rem;
+}
+
+/* Service Section Styles */
+.service-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-section:hover {
+    transform: translateY(-5px);
+}
+
+.service-section.reversed {
+    flex-direction: row-reverse;
+}
+
+.service-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f0faff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #002040;
+    font-size: 1.5rem;
+    border: 2px solid #e0f2fe;
+}
+
+.service-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #002040;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.service-content h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features li {
+    padding: 0.3rem 0;
+    color: #333;
+    position: relative;
+    padding-left: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #002040;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.service-image {
+    flex: 1;
+    min-height: 250px;
+    background-color: #f0faff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #002040;
+    font-size: 3rem;
+    border-left: 1px solid #e0f2fe;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .service-section {
+        flex-direction: column !important;
+    }
+    
+    .service-section.reversed {
+        flex-direction: column !important;
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    .service-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .service-image {
+        min-height: 200px;
+        border-left: none;
+        border-top: 1px solid #e0f2fe;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-content {
+        padding: 1rem;
+    }
+} 
