@@ -67,10 +67,34 @@
     padding-right: 2px;
   }
   
+  /* Mobile responsiveness */
+  @media (max-width: 1024px) {
+    .lead-instructor-card {
+      max-width: 90%;
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    .instructor-photo {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .lead-instructor-card h2 {
+      font-size: 1.4rem;
+    }
+  
+    .lead-instructor-card p,
+    .lead-instructor-card li {
+      font-size: 0.95rem;
+    }
+  }
+
   @media (max-width: 768px) {
     .lead-instructor-card {
       max-width: 90%;
       padding: 16px;
+      margin: 16px auto;
     }
   
     .instructor-photo {
@@ -85,5 +109,39 @@
     .lead-instructor-card p,
     .lead-instructor-card li {
       font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .lead-instructor-card {
+      max-width: 95%;
+      padding: 12px;
+      margin: 12px auto;
+    }
+  
+    .instructor-photo {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 12px;
+    }
+  
+    .lead-instructor-card h2 {
+      font-size: 1.1rem;
+      margin: 0 0 8px;
+    }
+  
+    .lead-instructor-card p {
+      font-size: 0.85rem;
+      margin: 6px 0;
+    }
+  
+    .lead-instructor-card li {
+      font-size: 0.8rem;
+      margin: 6px 0;
+      padding-left: 16px;
+    }
+  
+    .lead-instructor-card ul {
+      margin: 8px 0;
     }
   }

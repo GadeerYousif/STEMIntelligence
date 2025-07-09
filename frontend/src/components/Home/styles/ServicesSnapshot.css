@@ -50,13 +50,187 @@
 }
 
 /* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 3rem 1.5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .services-title {
+    font-size: 1.8rem;
+  }
+  
+  .services-cards {
+    gap: 2rem;
+  }
+  
+  .service-card {
+    width: 20rem;
+    padding: 1.8rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .services-section {
+    padding: 2.5rem 1rem;
+    padding-bottom: 4rem;
+  }
+  
+  .services-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
   .services-cards {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
 
   .service-card {
     width: 90%;
+    padding: 1.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .services-section {
+    padding: 2.5rem 1rem;
+    padding-bottom: 4rem;
+  }
+  
+  .services-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+  
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 2rem 0.8rem;
+    padding-bottom: 3rem;
+  }
+  
+  .services-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .services-cards {
+    gap: 1rem;
+  }
+  
+  .service-card {
+    width: 95%;
+    padding: 1.2rem;
+  }
+  
+  .service-card img {
+    height: 50px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .services-section {
+    padding: 1.5rem 0.6rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .services-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .service-card {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .service-card img {
+    height: 45px;
+    margin-bottom: 0.6rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .service-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .services-section {
+    padding: 5rem 3rem;
+    padding-bottom: 7rem;
+  }
+  
+  .services-title {
+    font-size: 2.2rem;
+  }
+  
+  .services-cards {
+    gap: 3rem;
+  }
+  
+  .service-card {
+    width: 24rem;
+    padding: 2.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .service-card p {
+    font-size: 1.2rem;
   }
 }

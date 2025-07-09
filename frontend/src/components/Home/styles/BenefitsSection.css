@@ -49,3 +49,162 @@
 .benefit-text {
   color: #ffffff;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .benefits-section {
+    padding: 3rem 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
+  .benefits-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .benefits-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-section {
+    padding: 2.5rem 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .benefits-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .benefits-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  
+  .benefits-list li {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+  
+  .benefit-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .benefits-section {
+    padding: 2.5rem 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .benefits-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .benefits-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+  
+  .benefits-list li {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+  
+  .benefit-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-section {
+    padding: 2rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .benefits-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .benefits-list {
+    font-size: 0.95rem;
+  }
+  
+  .benefits-list li {
+    padding: 0.7rem;
+    gap: 0.7rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .benefit-icon {
+    font-size: 1.2rem;
+  }
+  
+  .benefit-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .benefits-section {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .benefits-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .benefits-list {
+    font-size: 0.9rem;
+    gap: 0.8rem;
+  }
+  
+  .benefits-list li {
+    padding: 0.6rem;
+    gap: 0.6rem;
+  }
+  
+  .benefit-icon {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .benefits-section {
+    padding: 5rem 3rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+  
+  .benefits-container h2 {
+    font-size: 2.2rem;
+  }
+  
+  .benefits-list {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .benefits-list li {
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+  
+  .benefit-icon {
+    font-size: 1.7rem;
+  }
+}

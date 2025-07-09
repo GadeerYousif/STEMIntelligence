@@ -343,7 +343,99 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .services-container {
+        padding: 0 1.5rem;
+    }
+    
+    .services-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .service-content {
+        padding: 1.8rem;
+    }
+    
+    .pricing-cards {
+        gap: 1.5rem;
+    }
+    
+    .pricing-card {
+        width: 260px;
+        padding: 1.8rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .services-container {
+        padding: 0 1rem;
+    }
+    
+    .services-header {
+        padding: 3rem 1rem;
+        margin-bottom: 3rem;
+    }
+    
+    .services-header h1 {
+        font-size: 2rem;
+    }
+    
+    .service-section {
+        flex-direction: column !important;
+    }
+    
+    .service-section.reversed {
+        flex-direction: column !important;
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    .service-content h2 {
+        font-size: 1.3rem;
+    }
+    
+    .service-image {
+        min-height: 200px;
+        border-left: none;
+        border-top: 1px solid #e0f2fe;
+    }
+    
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .pricing-card {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .pricing-section,
+    .testimonials-section,
+    .cta-section {
+        padding: 2.5rem 1.5rem;
+        margin: 3rem 0;
+    }
+    
+    .sticky-cta {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .sticky-cta .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 630px) {
     .services-container {
         padding: 0 1rem;
     }
@@ -399,17 +491,242 @@
 }
 
 @media (max-width: 480px) {
+    .services-container {
+        padding: 0 0.8rem;
+    }
+    
+    .services-header {
+        padding: 2rem 0.8rem;
+        margin-bottom: 2rem;
+    }
+    
     .services-header h1 {
         font-size: 1.8rem;
+    }
+    
+    .services-header p {
+        font-size: 1rem;
     }
     
     .service-content {
         padding: 1rem;
     }
     
+    .service-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .service-content h3 {
+        font-size: 1rem;
+    }
+    
+    .service-content p {
+        font-size: 0.9rem;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .service-image {
+        min-height: 150px;
+        font-size: 2.5rem;
+    }
+    
     .pricing-section,
     .testimonials-section,
     .cta-section {
         padding: 2rem 1rem;
+        margin: 2rem 0;
+    }
+    
+    .pricing-section h2,
+    .testimonials-section h2,
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .pricing-section p,
+    .cta-section p {
+        font-size: 1rem;
+    }
+    
+    .testimonial-quote {
+        font-size: 1.1rem;
+    }
+    
+    .pricing-card {
+        width: 95%;
+        padding: 1.2rem;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .services-container {
+        padding: 0 0.6rem;
+    }
+    
+    .services-header {
+        padding: 1.5rem 0.6rem;
+    }
+    
+    .services-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .services-header p {
+        font-size: 0.9rem;
+    }
+    
+    .service-content {
+        padding: 0.8rem;
+    }
+    
+    .service-content h2 {
+        font-size: 1.1rem;
+    }
+    
+    .service-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .service-content p {
+        font-size: 0.85rem;
+    }
+    
+    .service-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    .service-image {
+        min-height: 120px;
+        font-size: 2rem;
+    }
+    
+    .pricing-section,
+    .testimonials-section,
+    .cta-section {
+        padding: 1.5rem 0.8rem;
+        margin: 1.5rem 0;
+    }
+    
+    .pricing-section h2,
+    .testimonials-section h2,
+    .cta-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .pricing-section p,
+    .cta-section p {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-quote {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author {
+        font-size: 0.9rem;
+    }
+    
+    .pricing-card {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+    .services-container {
+        max-width: 1400px;
+        padding: 0 3rem;
+    }
+    
+    .services-header {
+        padding: 5rem 3rem;
+    }
+    
+    .services-header h1 {
+        font-size: 2.8rem;
+    }
+    
+    .services-header p {
+        font-size: 1.2rem;
+    }
+    
+    .service-content {
+        padding: 2.5rem;
+    }
+    
+    .service-content h2 {
+        font-size: 1.7rem;
+    }
+    
+    .service-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-content p {
+        font-size: 1.1rem;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .service-image {
+        min-height: 300px;
+        font-size: 3.5rem;
+    }
+    
+    .pricing-cards {
+        gap: 2.5rem;
+    }
+    
+    .pricing-card {
+        width: 300px;
+        padding: 2.5rem;
+    }
+    
+    .pricing-section,
+    .testimonials-section,
+    .cta-section {
+        padding: 4rem 3rem;
+        margin: 5rem 0;
+    }
+    
+    .pricing-section h2,
+    .testimonials-section h2,
+    .cta-section h2 {
+        font-size: 2.2rem;
+    }
+    
+    .pricing-section p,
+    .cta-section p {
+        font-size: 1.2rem;
+    }
+    
+    .testimonial-quote {
+        font-size: 1.3rem;
+    }
+    
+    .testimonial-author {
+        font-size: 1.1rem;
     }
 }

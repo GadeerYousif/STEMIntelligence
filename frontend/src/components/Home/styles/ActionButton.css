@@ -38,18 +38,117 @@
   background-color: #e6c200;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .cta-content h2 {
-    font-size: 1.5rem;
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .cta-bottom {
+    padding: 3rem 1.5rem;
   }
-
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
   .cta-content p {
     font-size: 1rem;
   }
+}
 
+@media (max-width: 768px) {
+  .cta-bottom {
+    padding: 2.5rem 1rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .cta-bottom {
+    padding: 2.5rem 1rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
   .cta-button {
     width: 100%;
+    max-width: 300px;
     padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-bottom {
+    padding: 2rem 0.8rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .cta-bottom {
+    padding: 1.5rem 0.6rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-content p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .cta-bottom {
+    padding: 5rem 3rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .cta-content p {
+    font-size: 1.2rem;
+  }
+  
+  .cta-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
   }
 }

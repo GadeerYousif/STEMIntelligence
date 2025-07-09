@@ -1,19 +1,20 @@
 .hero {
-  height: 32rem;
-  background-size: 50%;
+  height: 30rem;
+  background-size: contain;
   background-position: center;
-  position:relative;
+  background-repeat: repeat;
+  position: relative;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-repeat:space;
+  max-height: fit-content;
 }
 
 .hero-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(1, 26, 50, 0.677); /* Dark blue overlay */
+  background-color: rgba(40, 67, 92, 0.677); /* Dark blue overlay */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,6 +48,8 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .cta-button:hover {
@@ -54,21 +57,188 @@
 }
 
 /* Mobile responsiveness */
-@media (max-width: 700px) {
-  .hero h1 {
-    font-size: 1.8rem;
-    background-repeat:initial;
-
+@media (max-width: 1024px) {
+  .hero {
+    height: 28rem;
+    background-size: contain;  
+    background-repeat: repeat;
   }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .hero {
+    height: 26rem;
+    background-size: contain;
+    background-position: center;
+    max-height: fit-content;
+    background-repeat: repeat;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
   .hero p {
     font-size: 1rem;
-    background-repeat:initial;
-
   }
+  
+  .hero-overlay {
+    padding: 1.3rem;
+  }
+}
 
+@media (max-width: 630px) {
+  .hero {
+    height: 24rem;
+    background-size: cover;
+    background-position: center;
+    max-height: fit-content;
+    background-repeat: no-repeat;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-overlay {
+    padding: 1.2rem;
+  }
+  
   .cta-button {
     width: 100%;
+    max-width: 300px;
     padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    max-height: fit-content;
+    background-repeat: no-repeat;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .hero-overlay {
+    padding: 1rem;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    height: 18rem;
+    background-size: cover;
+    background-position: center;
+    max-height: fit-content;
+    background-repeat: no-repeat;
+  }
+  
+  .hero h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-overlay {
+    padding: 0.8rem;
+  }
+  
+  .cta-button {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .hero {
+    height: 36rem;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+  }
+  
+  .hero-overlay {
+    padding: 2rem;
+  }
+  
+  .cta-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1920px) {
+  .hero {
+    height: 40rem;
+    background-size: 100% auto;
+    background-position: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.4rem;
+  }
+  
+  .hero-overlay {
+    padding: 2.5rem;
+  }
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
   }
 }

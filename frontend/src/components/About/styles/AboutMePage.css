@@ -36,4 +36,66 @@
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+    .about-page {
+        padding: 1.5rem;
+    }
+    
+    .AMTitle,
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-header p {
+        font-size: 1rem;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page {
+        padding: 1rem;
+    }
+    
+    .AMTitle,
+    .about-header h1 {
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+        padding: 0.8rem;
+    }
+    
+    .about-header {
+        margin-bottom: 2rem;
+    }
+    
+    .about-header p {
+        font-size: 0.95rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page {
+        padding: 0.8rem;
+    }
+    
+    .AMTitle,
+    .about-header h1 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        padding: 0.5rem;
+    }
+    
+    .about-header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-header p {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
 } 
