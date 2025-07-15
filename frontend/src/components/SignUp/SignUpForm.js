@@ -168,7 +168,7 @@ if (response.ok) {
             value={formData.phoneNum} 
             onChange={handleChange} 
             onBlur={handleBlur}
-            placeholder="Enter your phone number (optional) - 10 digits or XXX-XXX-XXXX"
+            placeholder="Enter your phone number (optional)"
             className={`signup-form-input${errors.phoneNum ? ' signup-form-input-error' : ''}`}
           />
           {errors.phoneNum && <span className="signup-form-error-message">{errors.phoneNum}</span>}

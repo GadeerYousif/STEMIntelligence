@@ -3,6 +3,7 @@ import ServicesHeader from "../Services/ServicesHeader";
 import ServicesList from "../Services/ServicesList";
 import PricingSection from "../Services/PricingSection";
 import ServicesCTA from "../Services/ServicesCTA";
+import Footer from "../shared/Footer";
 
 export default function ServicesPage() {
     const handleBookSession = () => {
@@ -17,6 +18,10 @@ export default function ServicesPage() {
                 <ServicesList />
                 <PricingSection onBookSession={handleBookSession} />
                 <ServicesCTA onBookSession={handleBookSession} />
+                
+                
+                <Footer />
+
             </div>
         </div>
     );

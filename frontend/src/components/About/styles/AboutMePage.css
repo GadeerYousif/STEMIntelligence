@@ -1,101 +1,268 @@
-/* About Me Page Styles */
-.AMTitle {
-    text-align: center;
-    color: #1a1a1a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 2rem 0;
-    padding: 1rem;
-}
-
-/* About page container */
+/* About Me Page Styles - Modern & Compact */
 .about-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fc 0%, #ffffff 100%);
+    min-height: 100vh;
+    padding: 0;
 }
 
-/* About page header */
+/* Compact Header */
 .about-header {
+    background: linear-gradient(135deg, #002040 0%, #007ea7 100%);
+    color: white;
     text-align: center;
-    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-header h1 {
-    color: #1a1a1a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .about-header p {
-    color: #666;
     font-size: 1.1rem;
+    opacity: 0.9;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
 }
 
-/* Mobile responsiveness */
+/* Main Content - Side by Side Layout */
+.about-main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.instructor-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 32, 64, 0.1);
+    overflow: hidden;
+}
+
+.teaching-approach-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 32, 64, 0.1);
+    padding: 2rem;
+}
+
+.teaching-approach-section h2 {
+    font-size: 1.8rem;
+    color: #002040;
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.approach-item {
+    padding: 1.25rem;
+    background: linear-gradient(135deg, #f8f9fc 0%, #ffffff 100%);
+    border-radius: 8px;
+    border-left: 4px solid #007ea7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.approach-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 32, 64, 0.15);
+}
+
+.approach-item h3 {
+    font-size: 1.1rem;
+    color: #002040;
+    margin-bottom: 0.75rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.approach-item p {
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Mission Section */
+.mission-section {
+    background: white;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 32, 64, 0.1);
+    text-align: center;
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    color: #002040;
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.mission-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 1024px) {
-    .about-page {
-        padding: 1.5rem;
+    .about-main-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1.5rem 1.5rem;
     }
     
-    .AMTitle,
+    .about-header {
+        padding: 2.5rem 1.5rem;
+    }
+    
     .about-header h1 {
         font-size: 2.2rem;
     }
     
-    .about-header p {
-        font-size: 1rem;
-        max-width: 500px;
+    .teaching-approach-section {
+        padding: 1.5rem;
+    }
+    
+    .mission-section {
+        margin: 1.5rem;
+        padding: 2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .about-page {
-        padding: 1rem;
-    }
-    
-    .AMTitle,
-    .about-header h1 {
-        font-size: 1.8rem;
-        margin: 1.5rem 0;
-        padding: 0.8rem;
-    }
-    
     .about-header {
-        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-header h1 {
+        font-size: 2rem;
     }
     
     .about-header p {
-        font-size: 0.95rem;
-        max-width: 100%;
-        padding: 0 1rem;
+        font-size: 1rem;
+    }
+    
+    .about-main-content {
+        padding: 0 1rem 1rem;
+        gap: 1rem;
+    }
+    
+    .teaching-approach-section {
+        padding: 1.25rem;
+    }
+    
+    .teaching-approach-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .approach-grid {
+        gap: 1.25rem;
+    }
+    
+    .approach-item {
+        padding: 1rem;
+    }
+    
+    .approach-item h3 {
+        font-size: 1rem;
+    }
+    
+    .approach-item p {
+        font-size: 0.9rem;
+    }
+    
+    .mission-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .mission-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .mission-section p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .about-page {
-        padding: 0.8rem;
-    }
-    
-    .AMTitle,
-    .about-header h1 {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-        padding: 0.5rem;
-    }
-    
     .about-header {
-        margin-bottom: 1.5rem;
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .about-header h1 {
+        font-size: 1.8rem;
     }
     
     .about-header p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         padding: 0 0.5rem;
+    }
+    
+    .about-main-content {
+        padding: 0 0.5rem 0.5rem;
+    }
+    
+    .teaching-approach-section {
+        padding: 1rem;
+    }
+    
+    .teaching-approach-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .approach-item {
+        padding: 0.875rem;
+    }
+    
+    .approach-item h3 {
+        font-size: 0.95rem;
+    }
+    
+    .approach-item p {
+        font-size: 0.85rem;
+    }
+    
+    .mission-section {
+        margin: 0.5rem;
+        padding: 1.25rem;
+    }
+    
+    .mission-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .mission-section p {
+        font-size: 0.95rem;
     }
 } 

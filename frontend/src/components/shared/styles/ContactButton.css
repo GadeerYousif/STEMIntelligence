@@ -1,0 +1,181 @@
+/* Base Contact Button Styles */
+.contact-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Variants */
+.contact-button--primary {
+    background-color: #ffd700;
+    color: #002040;
+}
+
+.contact-button--primary:hover:not(:disabled) {
+    background-color: #ffc200;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.2);
+}
+
+.contact-button--secondary {
+    background-color: #007ea7;
+    color: white;
+}
+
+.contact-button--secondary:hover:not(:disabled) {
+    background-color: #005a7a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 126, 167, 0.3);
+}
+
+.contact-button--outline {
+    background-color: transparent;
+    color: #002040;
+    border: 2px solid #ffd700;
+}
+
+.contact-button--outline:hover:not(:disabled) {
+    background-color: #ffd700;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.1);
+}
+
+.contact-button--ghost {
+    background-color: transparent;
+    color: #002040;
+    border: 2px solid transparent;
+}
+
+.contact-button--ghost:hover:not(:disabled) {
+    background-color: rgba(255, 215, 0, 0.1);
+    border-color: #ffd700;
+    transform: translateY(-1px);
+}
+
+/* Sizes */
+.contact-button--small {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.contact-button--medium {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.contact-button--large {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.contact-button--xlarge {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.25rem;
+}
+
+/* Sticky variant */
+.contact-button--sticky {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 32, 64, 0.2);
+    border-radius: 8px;
+}
+
+.contact-button--sticky:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 32, 64, 0.3);
+}
+
+/* Full width variant */
+.contact-button--full-width {
+    width: 100%;
+    display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-button--sticky {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-button--large {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+    }
+    
+    .contact-button--xlarge {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .contact-button--sticky {
+        width: auto;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* Animation for better UX */
+.contact-button:active:not(:disabled) {
+    transform: translateY(0);
+    transition: transform 0.1s ease;
+}
+
+/* Focus states for accessibility */
+.contact-button:focus {
+    outline: 2px solid #007ea7;
+    outline-offset: 2px;
+}
+
+/* Loading state */
+.contact-button--loading {
+    position: relative;
+    color: transparent;
+}
+
+.contact-button--loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 

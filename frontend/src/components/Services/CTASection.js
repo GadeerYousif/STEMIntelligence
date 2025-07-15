@@ -1,4 +1,5 @@
 import React from "react";
+import ContactButton from "../shared/ContactButton";
 import "./styles/CTASection.css";
 
 export default function CTASection({ title, description, buttonText, onClick, isSticky = false }) {
@@ -12,9 +13,13 @@ export default function CTASection({ title, description, buttonText, onClick, is
                     <p>{description}</p>
                 </>
             )}
-            <button className="btn btn-primary" onClick={onClick}>
-                {buttonText}
-            </button>
+            <ContactButton 
+                text={buttonText}
+                onClick={onClick}
+                variant="primary"
+                size="medium"
+                isSticky={isSticky}
+            />
         </div>
     );
 } 

@@ -14,7 +14,7 @@ export default function ServicesList() {
                     subtitle={service.subtitle}
                     description={service.description}
                     features={service.features}
-                    imageIcon={service.imageIcon}
+                    imageIndex={service.imageIndex}
                     isReversed={service.isReversed}
                 />
             ))}

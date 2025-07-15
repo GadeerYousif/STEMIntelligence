@@ -1,16 +1,16 @@
 export const servicesData = [
     {
         icon: "🎓",
-        title: "Private Virtual Tutoring (High-School Students)",
-        subtitle: "Math, Science, Coding - $65/hr",
-        description: "I offer professional virtual tutoring in math, science, and coding. All of my lessons are taught with interactive questions, clear use of visuals, and modern teaching technology.",
+        title: "Private Virtual Tutoring (Grades 1-12)",
+        subtitle: "Math, Science, Coding - $45/hr",
+        description: "I offer professional virtual tutoring in math, science, and coding for students in grades 1-12. All of my lessons are taught with interactive questions, clear use of visuals, and modern teaching technology.",
         features: [
             "Interactive questions and problem-solving",
             "Clear use of visuals and diagrams",
             "Modern teaching technology",
             "Personalized learning approach"
         ],
-        imageIcon: "📚",
+        imageIndex: 0,
         isReversed: false
     },
     {
@@ -24,13 +24,13 @@ export const servicesData = [
             "Practice problem focus",
             "Quick turnaround time"
         ],
-        imageIcon: "🎬",
+        imageIndex: 1,
         isReversed: true
     },
     {
         icon: "🏛️",
         title: "Private Tutoring (University Students)",
-        subtitle: "University Level Math - $55/hr",
+        subtitle: "University Level Math - $50/hr",
         description: "I offer professional virtual tutoring in university-level math for Engineering and Business students. All of my lessons are taught with interactive questions, clear use of visuals, and modern teaching technology.",
         features: [
             "University-level math tutoring",
@@ -38,7 +38,7 @@ export const servicesData = [
             "Interactive problem-solving",
             "Modern teaching technology"
         ],
-        imageIcon: "🎯",
+        imageIndex: 2,
         isReversed: false
     },
    
@@ -46,7 +46,7 @@ export const servicesData = [
 
 export const pricingData = [
     {
-        title: "High School Tutoring",
+        title: "Grades 1-12 Tutoring",
         price: "$45",
         priceLabel: "per hour",
         features: [
@@ -62,7 +62,7 @@ export const pricingData = [
     
     {
         title: "University Tutoring",
-        price: "$55",
+        price: "$50",
         priceLabel: "per hour",
         features: [
             "University-level math",
@@ -82,7 +82,8 @@ export const pricingData = [
             "1-5 minute explanations",
             "Practice problem focus",
             "Quick turnaround",
-            "Professional quality"
+            "Professional quality",
+            "                    "
         ],
         buttonText: "Submit Request",
         buttonType: "secondary",
