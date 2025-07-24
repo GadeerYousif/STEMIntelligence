@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import AboutInstructorGadeerCard from "../About/AboutInstructorGadeerCard";
 import "../About/styles/AboutMePage.css";
 import Footer from "../shared/Footer";
@@ -6,6 +7,16 @@ import Footer from "../shared/Footer";
 export default function AboutMePage() {
     return ( 
         <div className="about-page">
+            <Helmet>
+                <title>About | STEM Intelligence Tutoring</title>
+                <meta name="description" content="Learn about STEM Intelligence's mission, teaching philosophy, and lead instructor. Discover our personalized, interactive approach to online tutoring." />
+                <meta name="keywords" content="about STEM Intelligence, tutoring philosophy, online tutor, math help, STEM education, personalized learning" />
+                <meta property="og:title" content="About | STEM Intelligence Tutoring" />
+                <meta property="og:description" content="Learn about STEM Intelligence's mission, teaching philosophy, and lead instructor. Discover our personalized, interactive approach to online tutoring." />
+                <meta property="og:image" content="https://www.stem-intelligence.ca/static/media/New_Logo_cropped.c8dfa7454d426f1c28fd.png" />
+                <meta property="og:url" content="https://www.stem-intelligence.ca/about" />
+                <link rel="canonical" href="https://www.stem-intelligence.ca/about" />
+            </Helmet>
             {/* Compact Header */}
             <div className="about-header">
                 <h1>About STEM Intelligence</h1>

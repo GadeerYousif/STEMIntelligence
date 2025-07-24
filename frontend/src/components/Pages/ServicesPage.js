@@ -4,6 +4,7 @@ import ServicesList from "../Services/ServicesList";
 import PricingSection from "../Services/PricingSection";
 import ServicesCTA from "../Services/ServicesCTA";
 import Footer from "../shared/Footer";
+import { Helmet } from "react-helmet";
 
 export default function ServicesPage() {
     const handleBookSession = () => {
@@ -13,6 +14,10 @@ export default function ServicesPage() {
 
     return (
         <div className="services-page">
+            <Helmet>
+                <title>Services | STEM Intelligence Tutoring</title>
+                <link rel="canonical" href="https://www.stem-intelligence.ca/services" />
+            </Helmet>
             <div className="services-container">
                 <ServicesHeader />
                 <ServicesList />

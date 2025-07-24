@@ -245,7 +245,7 @@ export default function VideoSolutionForm() {
                   <div key={image.id} className="video-solution-image-item">
                     <img 
                       src={image.preview} 
-                      alt="Preview" 
+                      alt={`Preview of uploaded file: ${image.file.name}`} 
                       className="video-solution-preview-img"
                     />
                     <button 

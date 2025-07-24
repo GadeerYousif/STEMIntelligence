@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Form from "../SignUp/Form";
 import FAQ from "../SignUp/FAQ";
 import "../SignUp/styles/SignUpPage.css";
@@ -26,6 +27,16 @@ export default function SignUpPage() {
 
     return (
         <div className="signup-form-container">
+            <Helmet>
+                <title>Contact | STEM Intelligence Tutoring</title>
+                <meta name="description" content="Contact STEM Intelligence for free online tutoring in math, science, and coding. Sign up for personalized lessons and get your questions answered!" />
+                <meta name="keywords" content="contact STEM Intelligence, sign up, free tutoring, online math help, STEM tutor, coding help, science tutor" />
+                <meta property="og:title" content="Contact | STEM Intelligence Tutoring" />
+                <meta property="og:description" content="Contact STEM Intelligence for free online tutoring in math, science, and coding. Sign up for personalized lessons and get your questions answered!" />
+                <meta property="og:image" content="https://www.stem-intelligence.ca/static/media/New_Logo_cropped.c8dfa7454d426f1c28fd.png" />
+                <meta property="og:url" content="https://www.stem-intelligence.ca/contact" />
+                <link rel="canonical" href="https://www.stem-intelligence.ca/contact" />
+            </Helmet>
             <Form />
             <FAQ />
             <Footer />

@@ -17,7 +17,7 @@ export const Navbar = () => {
                     <Link to="/" className="title">
                     <img 
                         src={Logo}
-                        alt="Logo"
+                        alt="STEM Intelligence logo"
                         className="navbar-logo"
                     />  
                     </Link>
