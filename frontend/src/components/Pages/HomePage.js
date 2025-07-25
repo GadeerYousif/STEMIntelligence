@@ -18,7 +18,10 @@ export default function HomePage() {
                 <meta property="og:description" content="Get free, high-quality online tutoring in math, science, and coding. Personalized lessons, interactive learning, and expert instructors for all ages." />
                 <meta property="og:image" content="https://www.stem-intelligence.ca/static/media/New_Logo_cropped.c8dfa7454d426f1c28fd.png" />
                 <meta property="og:url" content="https://www.stem-intelligence.ca/" />
+                
                 <link rel="canonical" href="https://www.stem-intelligence.ca/" />
+                <link rel="sitemap" type="application/xml" href="https://www.stem-intelligence.ca/sitemap.xml" />
+                
                 <script type="application/ld+json">
                   {`
                     {
