@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/AboutInstructorGadeerCard.css";
-import instructorPhoto from "../../assets/logo512.png";
+import instructorPhoto from "../../../src/assets/Gadeer_Photo.png";
 export default function AboutInstructorGadeerCard() {
   return (
     <div className="lead-instructor-card">

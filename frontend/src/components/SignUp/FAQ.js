@@ -137,7 +137,7 @@ function FAQ() {
         </div>
       ))}
       <div className="faq-links">
-        <a href="#signup-form">Back to Sign Up</a> | <a href="/services">See Services & Pricing</a> | <a href="mailto:stemintelligencetutors@gmail.com">Contact Us</a>
+        <a href="#signup-form">Back to Sign Up</a><a href="/services">See Services & Pricing</a><a href="mailto:stemintelligencetutors@gmail.com">Contact Us</a>
       </div>
     </section>
   );
