@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./styles/AboutInstructorGadeerCard.css";
 import instructorPhoto from "../../../src/assets/Gadeer_Photo.png";
+
 export default function AboutInstructorGadeerCard() {
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    // Fix for Safari image rotation
+    const fixImageOrientation = () => {
+      if (imgRef.current) {
+        const img = imgRef.current;
+        img.style.transform = 'rotate(0deg)';
+        img.style.imageOrientation = 'from-image';
+      }
+    };
+
+    // Apply fix after image loads
+    if (imgRef.current) {
+      imgRef.current.onload = fixImageOrientation;
+      // Also apply immediately in case image is already loaded
+      fixImageOrientation();
+    }
+  }, []);
+
   return (
     <div className="lead-instructor-card">
       <img
-        src={instructorPhoto}  // Fixed: Properly closed tag
+        ref={imgRef}
+        src={instructorPhoto}
         alt="Gadeer Yousif"
         className="instructor-photo"
       />  
